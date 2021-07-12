@@ -4,8 +4,8 @@ module "vpc" {
   name = "sandbox-vpc"
   cidr = "10.0.0.0/16"
   azs             = var.availability_zones
-  private_subnets = var.public_subnet
-  public_subnets  = var.private_subnet
+  private_subnets = var.private_subnet
+  public_subnets  = var.public_subnet
 
   enable_nat_gateway = false
   single_nat_gateway = false

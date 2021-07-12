@@ -24,3 +24,6 @@ variable "private_subnet" {
     default = ["10.0.11.0/24"]
 }
 
+variable "ubuntu20" {
+    default = "ami-0d058fe428540cd89" #Ubuntu20.04 LTS
+}

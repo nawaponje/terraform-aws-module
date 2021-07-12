@@ -5,11 +5,11 @@
 #  name                   = "web"
 #  instance_count         = 3
 #
-#  ami                    = "ami-ebd02392"
+#  ami                    = var.ubuntu20
 #  instance_type          = "t2.micro"
-#  key_name               = "user1"
+#  key_name               = "nawapon-aws-key"
 #  monitoring             = true
-#  vpc_security_group_ids = ["sg-12345678"]
+#  vpc_security_group_ids = [module.web_server_sg.security_group_id]
 #  subnet_ids              = var.private_subnet
 #
 #  tags = {
